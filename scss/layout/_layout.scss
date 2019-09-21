@@ -1,0 +1,434 @@
+.ib-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: calc(100vh - 50px);
+}
+
+.ib-hero-area {
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: $theme-main-color;
+}
+
+.ib-hero-slider {
+    position: relative;
+    width: 100vw;
+    z-index: 0;
+}
+
+.ib-hero-area-bkg-image {
+    display: block;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.ib-hero-area-bkg-image-overlay {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255,255,255,0), #333);
+    position: absolute;
+    z-index: 1;
+}
+
+.ib-hero-area-bkg-image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ib-hero-area-text-values,
+.ib-hero-area-text-quotes {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.ib-hero-area-text-values {
+    height: 34px;
+    margin: auto;
+}
+
+.ib-hero-area-text-values h2, .ib-hero-area-text-values p {
+    margin: 0 20px 0 20px;
+    color: $theme-white;
+}
+
+.ib-hero-area-text-values p {
+    @include text-shadow-text;
+}
+
+.ib-hero-area-text-values h2 {
+    @include text-shadow-headline;
+}
+
+.ib-hero-area-text-values h2 {
+    position: relative;
+    font-size: 2.212em;
+    left: -2px;
+}
+
+.ib-hero-area-text-values p {
+    font-size: .85em;
+}
+
+.ib-hero-area-text-quotes {
+    display: none;
+}
+
+i.ib-quote-mark.ib-quote-begin, i.ib-quote-mark.ib-quote-end {
+    position: absolute;
+}
+
+
+i.ib-quote-mark.ib-quote-begin {
+    left: -30px;
+}
+
+span.ib-hero-quote {
+    font-style: italic;
+}
+
+i.ib-quote-from {
+    text-align: right;
+    display: block;
+}
+
+i.ib-quote-mark.ib-quote-end {
+    right: -30px;
+}
+
+i.ib-quote-mark.ib-quote-begin img, i.ib-quote-mark.ib-quote-end img {
+    width: 20px;
+    height: auto;
+}
+
+// Slick overwrite
+.slick-slide > div {
+    display: -ms-grid;
+    display: grid;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+ul.slick-dots {
+    bottom: 0;
+    margin: 20px;
+    padding-left: 0px;
+}
+
+ul.slick-dots li {
+    display: inline-block;
+    margin: 0 0 0 7px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    color: $theme-white;
+}
+
+.slick-dots li.slick-active button:before {
+    color: $theme-white;
+}
+
+.ib-featured-banner {
+    background: $theme-light-main-color;
+    width: 100vw;
+}
+
+.ib-featured-banner .slick-next { 
+     right: 15px;
+}
+
+.ib-featured-banner .slick-prev { 
+    left: 15px;
+}
+
+.ib-featured-banner .slick-prev,
+.ib-featured-banner .slick-next {
+    top: 20px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.ib-featured-logo {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.ib-featured-logo a {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.ib-featured-logo a:last-of-type {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.ib-featured-logo img {
+    max-height: 40px;
+    width: auto;
+}
+    
+.ib-front-page-section {
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0px;
+    background: $theme-white;
+}
+
+.ib-front-page-section-content {
+    max-width: 64em;
+    margin: auto;
+    padding: 0px 5%;
+    position: relative;
+}
+
+.ib-front-page-section-content a {
+    text-decoration: none;
+    color: initial;
+}
+
+.ib-front-page-section-text, .ib-front-page-section-img {
+    display: inline-block;
+    position: relative;
+}
+
+.ib-front-page-section-image {
+    width: 70%;
+    height: 84vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    @include img-shadow;
+    margin: auto auto 40px;
+}
+
+.ib-front-page-section-text h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 8.1vw;
+}
+
+.ib-middle-image-area {
+    height: 50vh;
+    position: relative;
+    z-index: -1;
+}
+
+.ib-middle-image-bkg-img {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    background-position: 50%;
+    top: 0;
+}
+
+.ib-front-page-contact {
+    padding: 40px 0px;
+    background-image: radial-gradient(to right, $theme-main-color, $theme-txt);
+}
+
+.ib-front-page-contact-info {
+    text-align: center;
+}
+
+.ib-front-page-contact-info h2,
+.ib-front-page-contact-info h3,
+.ib-front-page-contact-info h4 {
+    color: $theme-white;
+    @include text-shadow-headline;
+}
+
+.ib-front-page-contact-info h2 {
+    margin: 0;
+    font-size: 3.27em;
+}
+
+.ib-front-page-contact-info h3 {
+    margin: 30px 0px 0px;
+    font-size: 2.8em;
+}
+
+.ib-front-page-contact-info h3 .fas.fa-phone {
+    font-size: 0.8em;
+    position: relative;
+    top: -3px;
+}
+
+.ib-front-page-contact-info h4 {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+// .ib-red-corner-small {
+//     @include baseRedCorner;
+//     @include smallRedCorner;
+    
+// }
+
+.ib-red-corner-small i.fas.fa-ellipsis-h {
+    color: $theme-white;
+    position: absolute;
+    left: 0px;
+    bottom: -17px;
+    font-size: 1em;
+}
+
+@include mobile-landscape-norm {
+    .ib-hero-area-text-values {
+        height: 166px;
+    }
+    
+    .ib-hero-area-text-values h2, .ib-hero-area-text-values p {
+        margin: 0 0 0 100px;
+    }
+
+    .ib-hero-area-text-values h2 {
+        font-size: 3.112em;
+    }
+    
+    .ib-hero-area-text-values p {
+        font-size: 1.1em;
+    }
+
+    .ib-hero-area-text-quotes {
+        display: block;
+        height: 0px;
+        margin: auto auto 27%;
+        right: 100px;
+        width: 30em;
+        color: $theme-white;
+        @include text-shadow-text;
+    }
+
+    .ib-front-page-section-text h3 {
+        font-size: 5.9vw;
+    }
+}
+
+@include tablets {
+    .ib-hero-area-bkg-image img {
+        height: auto;
+        width: 100vw;
+    }
+
+    .ib-hero-area-text-values {
+        height: 197px;
+    }
+
+    .ib-hero-area-text-values h2 {
+        font-size: 3.618em;
+    }
+    
+    .ib-hero-area-text-values p {
+        font-size: 1.25em;
+    }
+
+    .ib-hero-area-text-quotes {
+        margin: auto auto 24%;
+    }
+
+    .ib-front-page-section-image {
+        width: 29.8%;
+        height: 35.7vw;
+    }
+
+    .ib-image-align-left,
+    .ib-text-block-align-left {
+        float:left;
+    }
+
+    .ib-front-page-section-text {
+        width: 60%;
+    }
+
+    .ib-image-align-right,
+    .ib-text-block-align-right {
+        float: right;
+    }
+
+    .ib-front-page-section-text h3 {
+        text-align: initial;
+        font-size: 4.1vw;
+    }
+
+    // .ib-sub-hero-boxes {
+    //     padding: 20px 50px;
+    // }
+
+    // .ib-sub-hero-boxes-overlay {
+    //     margin: -20px 0px 0px -50px;
+    // }
+
+    // .ib-red-corner {
+    //     border-left-width: 40px;
+    //     border-right-width: 40px;
+    //     border-bottom-width: 40px;
+    //     border-top-width: 40px;
+    // }
+
+    // .ib-red-corner i.fas.fa-ellipsis-h {
+    //     bottom: -29px;
+    //     font-size: 1.25em;
+    // }
+}
+
+@include displays {
+
+    .ib-hero-area-text-values {
+        height: 307px;
+    }
+
+    .ib-hero-area-text-values h2 {
+        font-size: 4.418em;
+    }
+    
+    .ib-hero-area-text-values p {
+        font-size: 1.7em;
+    }
+
+    .ib-hero-area-text-quotes {
+        margin: auto auto 18%;
+    }
+
+    .ib-front-page-section-image {
+        width: 264px;
+        height: 352px;
+    }
+
+    .ib-front-page-section-text {
+        width: 528px;
+    }
+
+    .ib-front-page-section-text h3 {
+        font-size: 2.6em;
+    }
+}
+
+// Slick overwrite
+
+.slick-prev,
+.slick-next {
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+}

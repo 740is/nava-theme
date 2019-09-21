@@ -1,0 +1,80 @@
+.ib-footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background: $theme-main-color;
+    padding: 80px 10px;
+    margin-top: -4px;
+}
+
+.ib-footer h2 {
+    color: $theme-white;
+}
+
+div#sb_instagram {
+    display: none;
+}
+
+.ib-instagram-feed h2, .ib-instagram-feed a {
+    text-align: center;
+}
+
+.ib-instagram-feed h2 {
+    margin: 0em;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.ib-instagram-feed>a {
+    display: block;
+    text-decoration: none;
+    color: $theme-white;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.ib-footer-wp-menu .menu-topp-valmynd-container ul {
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.ib-footer-wp-menu .menu-topp-valmynd-container ul li {
+    display: block;
+    padding-right: 5px;
+    margin: 0;
+}
+
+.ib-footer-wp-menu .menu-topp-valmynd-container ul li:last-of-type {
+    padding-right: 0px;
+    border-right: 0px;
+}
+
+.ib-footer-wp-menu .menu-topp-valmynd-container ul li a {
+    color: $theme-white;
+    text-decoration: none;
+}
+
+.copyright {
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+  }
+  
+  .copyright h4 {
+    margin: 0;
+    font-size: 0.8em;
+    //text-shadow: 1px 1px 2px #555;
+  }
+
+@include mobile-landscape-norm {
+    div#sb_instagram {
+        display: block;
+    }
+
+    .ib-footer-wp-menu .menu-topp-valmynd-container ul li {
+        display: inline-block;
+        border-right: 1px solid #b9b7b7;
+    }
+}
