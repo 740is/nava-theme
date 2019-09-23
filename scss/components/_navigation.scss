@@ -1,15 +1,14 @@
 .ib-main-nav-container {
   position: fixed;
   width: 100%;
+  background: $theme-white;
+  border-bottom: 1px solid #c39a6a;
+  box-shadow: 0px 2px 4px rgba(96, 56, 17, 0.2);
   z-index: 1000;
 }
 
-.ib-fill-nav {
-  background: $theme-main-color;
-}
-
 .ib-main-nav-inner-container {
-  color: #FFF;
+  color: $theme-main-color;
   padding: 10px 0px;
   height: 70px;
 }
@@ -57,7 +56,7 @@
   position: relative;
   display: block;
   padding: 0px 0px 20px;
-  color: #fff;
+  color: $theme-main-color;
   text-align: right;  
 }
 
@@ -127,7 +126,7 @@ i.fab, i.fas,
 
 i.fab:hover, i.fas:hover,
 .ib-top-nav-search i:hover {
-  color: $theme-extra-color;
+  color: $theme-main-color;
   @include hoverIn;
 }
 

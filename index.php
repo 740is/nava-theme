@@ -22,10 +22,12 @@
                                 <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"> -->
                             </div>
 
-                            <div class="ib-hero-area-text-values">
-                                <h2><?php echo get_field('field_5bf281dd46b06'); // Headline ?></h2>
-                                <p><?php echo get_field('field_5bf282ba46b07'); // Sub headline ?></p>
-                            </div>
+                            <?php if ( get_field('field_5bf281dd46b06') ) { ?>
+                                <div class="ib-hero-area-text-values">
+                                    <h2><?php echo get_field('field_5bf281dd46b06'); // Headline ?></h2>
+                                    <p><?php echo get_field('field_5bf282ba46b07'); // Sub headline ?></p>
+                                </div>
+                            <?php } ?>
 
                             <?php if ( get_field('field_5bf282cb46b08') ) { ?>
                                 <div class="ib-hero-area-text-quotes">
@@ -54,10 +56,12 @@
                                 <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"> -->
                             </div>
 
-                            <div class="ib-hero-area-text-values">
-                                <h2><?php echo get_field('field_5c011cca4ef76'); // Headline ?></h2>
-                                <p><?php echo get_field('field_5c011cd14ef77'); // Sub headline ?></p>
-                            </div>
+                            <?php if ( get_field('field_5c011cca4ef76') ) { ?>
+                                <div class="ib-hero-area-text-values">
+                                    <h2><?php echo get_field('field_5c011cca4ef76'); // Headline ?></h2>
+                                    <p><?php echo get_field('field_5c011cd14ef77'); // Sub headline ?></p>
+                                </div>
+                            <?php } ?>
 
                             <?php if ( get_field('field_5c011cd44ef78') ) { ?>
                                 <div class="ib-hero-area-text-quotes">
@@ -85,10 +89,12 @@
                             <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"> -->
                         </div>
 
-                        <div class="ib-hero-area-text-values">
-                            <h2><?php echo get_field('field_5c01339d169cc'); // Headline ?></h2>
-                            <p><?php echo get_field('field_5c0133a2169cd'); // Sub headline ?></p>
-                        </div>
+                        <?php if ( get_field('field_5c01339d169cc') ) { ?>
+                            <div class="ib-hero-area-text-values">
+                                <h2><?php echo get_field('field_5c01339d169cc'); // Headline ?></h2>
+                                <p><?php echo get_field('field_5c0133a2169cd'); // Sub headline ?></p>
+                            </div>
+                        <?php } ?>
 
                         <?php if ( get_field('field_5c0133aa169ce') ) { ?>
                             <div class="ib-hero-area-text-quotes">
@@ -115,10 +121,12 @@
                             <!-- <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"> -->
                         </div>
 
-                        <div class="ib-hero-area-text-values">
-                            <h2><?php echo get_field('field_5c01346f9f6ef'); // Headline ?></h2>
-                            <p><?php echo get_field('field_5c0134799f6f0'); // Sub headline ?></p>
-                        </div>
+                        <?php if ( get_field('field_5c01346f9f6ef') ) { ?>
+                            <div class="ib-hero-area-text-values">
+                                <h2><?php echo get_field('field_5c01346f9f6ef'); // Headline ?></h2>
+                                <p><?php echo get_field('field_5c0134799f6f0'); // Sub headline ?></p>
+                            </div>
+                        <?php } ?>
 
                         <?php if ( get_field('field_5c01347d9f6f1') ) { ?>
                             <div class="ib-hero-area-text-quotes">
@@ -206,7 +214,7 @@
 
     <?php endif; ?>
 
-    <section class="ib-middle-image-area"> <?php // BEGIN: Hero section ?>
+    <!-- <section class="ib-middle-image-area"> <?php // BEGIN: Hero section ?>
         
         <?php
             $the_query = new WP_Query( array(
@@ -225,7 +233,7 @@
             }
             wp_reset_postdata();
         ?>
-    </section> <?php // END: Hero section ?>
+    </section> <?php // END: Hero section ?> -->
 
     <!-- <div class="ib-front-page-contact">
         <div class="ib-front-page-contact-content">
@@ -259,10 +267,10 @@
                 <div class="ib-front-page-section-text ib-text-block-align-left">
 
                     <h3><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
-                    <div class="ib-button ib-button-main-color">
+                    <?php the_content(); ?>
+                    <!-- <div class="ib-button ib-button-main-color">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </div>
+                    </div> -->
 
                 </div> <?php // .ib-front-page-section-text ?>
 

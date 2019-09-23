@@ -22,7 +22,7 @@ body {
   background-color: #ffffff; }
 
 p, li, td, th {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   line-height: 1.618em;
   margin-top: 0.1em;
@@ -32,10 +32,10 @@ p, label, input, select, a, li, i {
   font-size: 0.85em; }
 
 h1, h2, h3, h4, h5, .ib-button a, i {
-  font-family: 'Nothing You Could Do', cursive; }
+  font-family: 'Anton', sans-serif; }
 
 h1, h2, h3, h4, h5 {
-  color: #b9c9d6; }
+  color: #C39A6B; }
 
 h1, h2, h3, h4 {
   font-weight: 400; }
@@ -69,7 +69,7 @@ h5 {
   margin-bottom: 0.95em;
   font-weight: 700;
   text-transform: uppercase;
-  color: #7cb2d8; }
+  color: #603812; }
 
 img {
   display: block; }
@@ -132,7 +132,7 @@ ul li a {
   overflow: hidden;
   max-width: 100vw;
   max-height: 100vh;
-  background-color: #7cb2d8; }
+  background-color: #603812; }
 
 .ib-hero-slider {
   position: relative;
@@ -238,7 +238,7 @@ ul.slick-dots li {
   color: #ffffff; }
 
 .ib-featured-banner {
-  background: #b9c9d6;
+  background: #C39A6B;
   width: 100vw; }
 
 .ib-featured-banner .slick-next {
@@ -296,7 +296,7 @@ ul.slick-dots li {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   margin: auto auto 40px; }
 
 .ib-front-page-section-text h3 {
@@ -318,7 +318,7 @@ ul.slick-dots li {
 
 .ib-front-page-contact {
   padding: 40px 0px;
-  background-image: radial-gradient(to right, #7cb2d8, #333333); }
+  background-image: radial-gradient(to right, #603812, #333333); }
 
 .ib-front-page-contact-info {
   text-align: center; }
@@ -460,7 +460,7 @@ ul.slick-dots li {
   margin: 0 auto 20px; }
 
 .ib-posts-pages-content img {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
 
 figure img {
   margin: 15px 0px 0px; }
@@ -470,7 +470,7 @@ ul.ib-article-list {
   padding-left: 0px; }
 
 ul.ib-article-list li {
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   background: #fdf9f1;
   padding: 1px 20px 20px 20px; }
@@ -483,7 +483,7 @@ ul.ib-article-list li {
   width: 96px;
   float: left;
   margin: 35px 10px 0px 0px;
-  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3); }
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2); }
 
 @media screen and (min-width: 568px) {
   .ib-posts-pages-content > h2 {
@@ -512,7 +512,7 @@ ul.ib-article-list li {
     margin: 5px 20px 0px -11vw; }
 
   .ib-posts-pages-content img {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); }
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
 
   .ib-article-list-thumbnail {
     height: 180px;
@@ -527,8 +527,7 @@ ul.ib-article-list li {
   position: relative;
   display: inline-block;
   width: 100%;
-  background: #7cb2d8;
-  padding: 80px 10px;
+  background: #603812;
   margin-top: -4px; }
 
 .ib-footer h2 {
@@ -578,6 +577,7 @@ div#sb_instagram {
 
 .copyright h4 {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.8em; }
 
 @media screen and (min-width: 640px) {
@@ -590,13 +590,13 @@ div#sb_instagram {
 .ib-main-nav-container {
   position: fixed;
   width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #c39a6a;
+  box-shadow: 0px 2px 4px rgba(96, 56, 17, 0.2);
   z-index: 1000; }
 
-.ib-fill-nav {
-  background: #7cb2d8; }
-
 .ib-main-nav-inner-container {
-  color: #FFF;
+  color: #603812;
   padding: 10px 0px;
   height: 70px; }
 
@@ -639,7 +639,7 @@ div#sb_instagram {
   position: relative;
   display: block;
   padding: 0px 0px 20px;
-  color: #fff;
+  color: #603812;
   text-align: right; }
 
 form#searchform label.screen-reader-text {
@@ -697,7 +697,7 @@ i.fab, i.fas,
 
 i.fab:hover, i.fas:hover,
 .ib-top-nav-search i:hover {
-  color: #fdf9f1;
+  color: #603812;
   transition: 0.7s; }
 
 i.fab.fa-facebook-f, i.fab.fa-twitter {
@@ -711,7 +711,7 @@ ul#menu-topp-valmynd li:hover ul.sub-menu {
   background: #3a3a3a; }
 
 ul#menu-topp-valmynd {
-  background: #7cb2d8; }
+  background: #603812; }
 
 .ib-main-nav ul {
   list-style: none;
@@ -755,7 +755,7 @@ ul#menu-topp-valmynd > li > a {
   text-transform: uppercase; }
 
 ul#menu-topp-valmynd li:hover {
-  background: #7cb2d8; }
+  background: #603812; }
 
 .ib-main-nav i.fas.fa-ellipsis-h,
 ul#menu-topp-valmynd li a {
@@ -831,7 +831,7 @@ ul#menu-topp-valmynd li ul.sub-menu li {
   box-shadow: 2px 2px 4px #555; }
 
 .ib-button-main-color a {
-  background: #7cb2d8;
+  background: #603812;
   color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

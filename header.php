@@ -17,7 +17,7 @@
             </div>
             
             <div class="ib-main-nav-logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo/iris_logo.svg" alt=""></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/logo/nava-logo-text.svg" alt=""></a>
             </div>
             <div class="ib-main-social-hamburger-container">
                 <div class="ib-main-social-icons">
