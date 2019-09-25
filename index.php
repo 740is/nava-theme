@@ -180,37 +180,49 @@
         </div> <?php // .ib-featured-content ?>
     </div> <?php // .ib-featured-banner ?>
 
+        <?php $left_orientation = left; ?>
+        <?php $right_orientation = right; ?>
 
     <?php
         $the_query = new WP_Query( array(
-            'category_name' => 'bio'
+            'category_name' => 'forsidusvaedi-eitt'
         ) );
 
         if ( $the_query->have_posts() ) :
     ?>
-    
-        <section class="ib-front-page-section">
-            <div class="ib-front-page-section-content">
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+    <section class="ib-front-page-section">
+        <div class="ib-front-page-section-content">
 
-                <div class="ib-front-page-section-image ib-image-align-left" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-                    
-                </div> <?php // .ib-front-page-section-image ?>
+            <div class="ib-front-page-section-image ib-image-align-<?php echo $left_orientation?>" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+                
+            </div> <?php // .ib-front-page-section-image ?>
+        
+            <div class="ib-front-page-section-text ib-text-block-align-<?php echo $right_orientation?>">
+
+                <h3><?php the_title(); ?></h3>
+                <?php the_excerpt(); ?>
+                <div class="ib-button ib-button-main-color">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </div>
+            </div> <?php // .ib-front-page-section-text ?>
+
+            <?php
+                if ( $left_orientation === 'left' ) :
+                    $left_orientation = right;
+                    $right_orientation = left;
+                else :
+                    $left_orientation = left;
+                    $right_orientation = right;
+                endif;
+            ?>
+        </div> <?php // .ib-front-page-section-content ?>
+    </section> <?php // .ib-front-page-section ?>
+
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
+
             
-                <div class="ib-front-page-section-text ib-text-block-align-right">
-
-                    <h3><?php the_title(); ?></h3>
-                    <?php the_excerpt(); ?>
-                    <div class="ib-button ib-button-main-color">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </div>
-                </div> <?php // .ib-front-page-section-text ?>
-
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
-
-            </div> <?php // .ib-front-page-section-content ?>
-        </section> <?php // .ib-front-page-section ?>
 
     <?php endif; ?>
 
@@ -250,21 +262,29 @@
     </div> -->
 
     <?php
+        if ( $left_orientation === 'left' ) :
+            $left_orientation = right;
+            $right_orientation = left;
+        else :
+            $left_orientation = left;
+            $right_orientation = right;
+        endif;
+    ?>
+
+    <?php
         $the_query = new WP_Query( array(
             'category_name' => 'forsidusvaedi-tvo'
         ) );
 
         if ( $the_query->have_posts() ) :
     ?>
-    
+    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <section class="ib-front-page-section">
             <div class="ib-front-page-section-content">
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-                <div class="ib-front-page-section-image ib-image-align-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+                <div class="ib-front-page-section-image ib-image-align-<?php echo $right_orientation; ?>" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
                 </div> <?php // .ib-front-page-section-image ?>
         
-                <div class="ib-front-page-section-text ib-text-block-align-left">
+                <div class="ib-front-page-section-text ib-text-block-align-<?php echo $left_orientation; ?>">
 
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
@@ -273,12 +293,19 @@
                     </div> -->
 
                 </div> <?php // .ib-front-page-section-text ?>
-
-                <?php endwhile; ?>
-                <?php wp_reset_postdata(); ?>
-
+                <?php
+                    if ( $left_orientation === 'left' ) :
+                        $left_orientation = right;
+                        $right_orientation = left;
+                    else :
+                        $left_orientation = left;
+                        $right_orientation = right;
+                    endif;
+                ?>
             </div> <?php // .ib-front-page-section-content ?>
         </section> <?php // .ib-front-page-section ?>
+    <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
 
     <?php endif; ?>
 

@@ -5,7 +5,7 @@
     add_theme_support( 'widgets' );
 
     function nava_theme_scripts() {
-        wp_enqueue_style('googleFonts-Anton','https://fonts.googleapis.com/css?family=Anton&display=swap');
+        wp_enqueue_style('googleFonts-Anton','https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap');
         wp_enqueue_style('googleFonts-Roboto','https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
         
