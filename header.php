@@ -41,7 +41,7 @@
     <div id="ib-main-nav" class="ib-main-nav">
         <div class="ib-main-nav-menu-container">
             <i id="ib-main-nav-menu-close" class="fas fa-times ib-main-nav-menu-close"></i>    
-            <?php //wp_nav_menu('2'); ?>
+            <?php wp_nav_menu('2'); ?>
         </div>
     </div>
     <div class="ib-wrapper">

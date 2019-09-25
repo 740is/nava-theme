@@ -32,11 +32,11 @@
 .ib-main-nav-search-container,
 .ib-main-nav-menu-container {
   position: absolute;
-  display: inline-table;
-  width: 250px;
+  display: block;
+  width: 76vw;
   right: 0;
   left: 0;
-  top: 0;
+  top: 15%;
   bottom: 0;
   margin: auto;
 }
@@ -57,7 +57,14 @@
   display: block;
   padding: 0px 0px 20px;
   color: $theme-main-color;
-  text-align: right;  
+  text-align: right; 
+  @include hoverOut; 
+}
+
+.ib-main-nav-search-close:hover,
+.ib-main-nav-menu-close:hover {
+  @include hoverIn;
+  color: $theme-light-main-color;
 }
 
 form#searchform label.screen-reader-text {
@@ -126,7 +133,7 @@ i.fab, i.fas,
 
 i.fab:hover, i.fas:hover,
 .ib-top-nav-search i:hover {
-  color: $theme-main-color;
+  color: $theme-light-main-color;
   @include hoverIn;
 }
 
@@ -201,7 +208,7 @@ ul#menu-topp-valmynd > li > a {
 }
 
 ul#menu-topp-valmynd li:hover {
-  background: $theme-main-color;
+  background: $theme-light-main-color;
 }
 
 .ib-main-nav i.fas.fa-ellipsis-h,
@@ -267,14 +274,19 @@ ul#menu-topp-valmynd li ul.sub-menu li {
     font-size: 1.7em;
   }
 
+  .ib-main-nav-search-container,
+.ib-main-nav-menu-container {
+  width: 37vw;
+}
+
   ul#menu-topp-valmynd li {
       display: block;
-      line-height: 0px;
+      line-height: 1.618em;
   }
 
   ul#menu-topp-valmynd li a {
       display: block;
-      padding: 23px 10px 20px;
+      padding: 10px 10px 10px;
       font-weight: 400;
   }
 
